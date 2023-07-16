@@ -18,8 +18,13 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "..",
+    "paths": {
+      "@features/*": ["src/features/*"],
+      "@pages/*": ["src/pages/*"]
+    }
   },
-  "include": [".eslintrc.cjs","src"],
+  "include": ["client/.eslintrc.cjstrc.cjs","src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
